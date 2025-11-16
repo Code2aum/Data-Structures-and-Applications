@@ -67,3 +67,16 @@ int qdelete(){
     front++;
     return;
 }
+
+int qdisplay(){
+    int i;
+    if(front==-1){
+        printf("Queue is Empty\n");
+        return;
+    }
+    printf("Status of queue is\n");
+    for(i=front;i<=rear;i++)
+        printf("%d\t",queue[i]);
+    printf("\n");
+    return;
+}
