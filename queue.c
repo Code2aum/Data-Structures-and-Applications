@@ -38,3 +38,17 @@ int qinsert(){
 front++;
 return;
 }
+
+int qdelete(){
+    int num;
+    if (rear==SIZE-1){
+        printf("Queue is full\n");
+        return;
+    }
+    printf("Enter element to insert\n");
+    scanf("%d",&num);
+    queue[++rear]=num;
+    if(front==-1)
+        front++;
+    return;
+}
