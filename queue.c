@@ -52,3 +52,18 @@ int qdelete(){
         front++;
     return;
 }
+
+int qdelete(){
+    if(front==-1){
+    printf("Queue is Empty\n");
+    return;
+    }
+    if(front==rear){
+        printf("Deleted element = %d\n",queue[front]);
+        front=-1;rear=-1;
+        return;
+    }
+    printf("Deleted element = %d\n",queue[front]);
+    front++;
+    return;
+}
